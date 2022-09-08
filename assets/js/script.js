@@ -23,7 +23,7 @@ function calculate(){
     
     
     document.querySelector(".heads-percent").textContent = percentageHead +"%"
-    document.querySelector(".tails-percent").textContent = percentageTail+"%"
+    document.querySelector(".tails-percent").textContent = percentageTail +"%"
 }
 
 
@@ -74,5 +74,8 @@ document.querySelector(".reset").addEventListener("click", function()
     headscount=0;
     tailscount=0;
     calculate()
+    document.querySelector(".heads-percent").textContent ="0%"
+    document.querySelector(".tails-percent").textContent="0%"
+
 })
 
