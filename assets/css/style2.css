@@ -32,17 +32,13 @@ main{
     padding-right:20px;
     margin:auto
 }
-table
+table, th, td, tr
 {
-    border: 1px solid orange;
+    text-align: center;
+    border: 2px solid orange;
     margin: auto;
 }
-th{
-    border: 1px solid orange
-}
-td{
-    border: 1px solid orange
-}
+
 button{
     font-size: 1.2em;
     border-radius: 10px;
@@ -51,8 +47,12 @@ button{
     background:linear-gradient(to bottom left, white, lightblue);
 }
 .reset{
-    background:linear-gradient(to bottom left, white, orange) 
+    background:linear-gradient(to bottom right, white, orange) 
 }
 .flipped:hover, .reset:hover{
     filter:brightness(85%)
+}
+img{
+    width: 300px;
+    height: 300px;
 }
