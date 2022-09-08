@@ -10,12 +10,20 @@ h1{
 }
 body{
     text-align: center;
+    background: linear-gradient(to bottom left, orange, white);
+    
 }
 .statusmessage{
     color: orange
 }
+main{
+    background-color: white;
+    margin:20px;
 
+
+}
 .container{
+    background-color: white;
     text-align: center;
     border:2px solid black;
     padding-top: 20px;
@@ -34,4 +42,17 @@ th{
 }
 td{
     border: 1px solid orange
+}
+button{
+    font-size: 1.2em;
+    border-radius: 10px;
+}
+.flipped{
+    background:linear-gradient(to bottom left, white, lightblue);
+}
+.reset{
+    background:linear-gradient(to bottom left, white, orange) 
+}
+.flipped:hover, .reset:hover{
+    filter:brightness(85%)
 }
