@@ -10,17 +10,16 @@ function calculate(){
     document.querySelector(".heads").textContent=headscount
     document.querySelector(".tails").textContent=tailscount
     let total= headscount+tailscount
-    if (total==0){
+    let percentageHead=0
+    let percentageTail
+    if (total>0){
         document.querySelector(".heads-percent").textContent ="0%"
         document.querySelector(".tails-percent").textContent="0%"
 
     }
-    else{
-        let percentageHead=Math.round (headscount/total *100)
-        let percentageTail=Math.round(tailscount/total *100)
+    percentageHead=Math.round (headscount/total *100)
 
-
-    }
+    percentageTail=Math.round(tailscount/total *100)
     
     
     document.querySelector(".heads-percent").textContent = percentageHead +"%"
